@@ -83,7 +83,7 @@ console.log(typeof c1)
 
 let Name = prompt('Your Name')
 let Surname = prompt('Your Surname')
-let Age = prompt('Your Age')
+let Age = +prompt('Your Age')
 let yourData = Name + " " + Surname + " " + Age;
 console.log(yourData)
 
