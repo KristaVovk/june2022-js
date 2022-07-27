@@ -69,11 +69,65 @@ let book1_1 = {
 console.log(book1_1.author);
 // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
 let banda = {
-    one: {
+    namber1: {
         name: 'Oleksii',
         username: 'Divisenko',
         password: 111
-    }
+    },
+    namber2: {
+        name: 'Oleksandra',
+        username: 'Doroguncova',
+        password: 222
+    },
+    namber3: {
+        name: 'Max',
+        username: 'Boritko',
+        password: 333
+    },
+    namber4: {
+        name: 'Max',
+        username: 'Boritko',
+        password: 444
+    },
+    namber5: {
+        name: 'Marina',
+        username: 'Kunec',
+        password: 555
+    },
+    namber6: {
+        name: 'Genya',
+        username: 'Velichev',
+        password: 666
+    },
+    namber7: {
+        name: 'Pavlo',
+        username: 'Virgesh',
+        password: 777
+    },
+    namber8: {
+        name: 'Egor',
+        username: 'Petrov',
+        password: 888
+    },
+    namber9: {
+        name: 'Masha',
+        username: 'Matveenko',
+        password: 999
+    },
+    namber10: {
+        name: 'Luda',
+        username: 'Bey',
+        password: 101010
+    },
 
 };
-console.log(banda.password);
+console.log(banda.namber1.password);
+console.log(banda.namber2.password);
+console.log(banda.namber3.password);
+console.log(banda.namber4.password);
+console.log(banda.namber5.password);
+console.log(banda.namber6.password);
+console.log(banda.namber7.password);
+console.log(banda.namber8.password);
+console.log(banda.namber9.password);
+console.log(banda.namber10.password);
