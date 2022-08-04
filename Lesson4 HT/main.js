@@ -1,23 +1,44 @@
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+
 // for (let i = 0; i < 10; i++) {
 //     document.write('<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>')
 //     console.log('i')
 // }
 // 2. За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 // for (let i = 0; i < 10; i++) {
-//     document.write
+//     document.write(`<div>Lorem ipsum dolor sit amet,consectetur. ${i}</div>`)
 //     console.log('i')
 // }
-
-// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-
-// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-//
-// - Використовуючи данні з масиву, за допомоги document.write та циклу
+// 3.За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+// let i = 0;
+// while (i < 20) {
+//     document.write(`<div>Lorem ipsum dolor sit amet,consectetur.</div>`);
+//     i++
+// }
+// 4. За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+// let i = 0;
+// while (i < 20) {
+//     document.write(`<div>Lorem ipsum dolor sit amet ${i}</div>`);
+//     i++
+// }
+__________________________
+// 5. Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Масив:
 //
-//     let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+// let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+// for (const listOfItem of listOfItems) {
+//     document.write('<ul>')
+//     for (const listOfItem in listOfItem)
+//         document.write(`<li>${listOfItem}</li>`)
+//     document.write('</ul>')
+// }
+let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+document.write(`<ul>`)
+for (const listOfItem of listOfItems) {
+    document.write(`<li>${listOfItem}</li>`)
+}
+document.write(`</ul>`)
 //
 // ШАБЛОН:
 //     <ul>
@@ -34,7 +55,7 @@
 //
 // -----------------------------------------------
 //
-//     Використовуючи данні з масиву, за допомоги document.write та циклу
+//    ! Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону  Зробити адекватну стилізацію
 // Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
 //
@@ -60,6 +81,13 @@
 //         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
 //     },
 // ];
+// for (const product of products) {
+//     document.write(`<div>
+// <h2>${product.title}</h2>
+// <h3>${product.price}</h3>
+// <img src="${product.image}" alt="">
+//     </div>`);
+// }
 //
 // ШАБЛОН
 // <div class="product-card">
@@ -68,10 +96,8 @@
 // </div>
 // Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
 //
-//
-//
 // --------------------
-//     є масив
+//  !   є масив
 // let users = [
 //     {name: 'vasya', age: 31, status: false},
 //     {name: 'petya', age: 30, status: true},
@@ -85,9 +111,22 @@
 //     {name: 'olya', age: 31, status: false},
 //     {name: 'max', age: 31, status: true}
 // ];
-// за допомоги циклу вивести:
-//     - користувачів зі статусом true
-
+// // за допомоги циклу вивести:
+// //     - користувачів зі статусом true
+// for (let user of users) {
+//     if (user.status===true){
+//         console.log(user)
+//     }
+// }
 // - користувачів зі статусом false
-
+// for (let user of users) {
+//     if (!user.status){
+//         console.log(user)
+//     }
+// }
 // - користувачів які старші за 30 років
+// for (let user of users) {
+//     if (user.age>30){
+//         console.log(user)
+//     }
+// }
