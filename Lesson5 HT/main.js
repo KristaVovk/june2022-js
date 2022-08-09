@@ -117,11 +117,99 @@ console.log(minNumber(number));
 // 11 створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
 let sumOf = [2, 3, 4, 5];
+
 function sumOfNumbers(arr) {
     let sum = 0;
     for (const arrElement of arr) {
-        sum+=arrElement;
+        sum += arrElement;
     }
     return sum;
 }
+
 console.log(sumOfNumbers(sumOf));
+
+// Additional
+// Всі функції повинні бути описані стрілочним типом!!!!
+// - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+
+let numberOne = [3, 8, -4];
+const smallestNumberArray = array => {
+    let min = array[0];
+    for (const minElement of array) {
+        if (minElement < min) {
+            min = minElement
+        }
+    }
+    return min;
+};
+console.log(smallestNumberArray (numberOne));
+
+// - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+let numberTwo = [4, 8, 1];
+const largestNumberArray = (array) => {
+    let max = array[0];
+    for (const max1 of array) {
+        if (max1 > max) {
+            max = max1
+        }
+    }
+    return max;
+}
+console.log(largestNumberArray(numberTwo));
+
+// - створити функцію яка повертає найбільше число з масиву
+
+let numberThree = [3, 5, 8, -7, 9];
+const returnsLargestNumberFromArray = (array) => {
+    let max = array[0];
+    for (const max1 of array) {
+        if (max1 > max) {
+            max = max1
+        }
+    }
+    console.log(max);
+}
+returnsLargestNumberFromArray(numberThree);
+
+// - створити функцію яка повертає найменьше число з масиву
+let numberFour = [5, 8, 2, -3];
+const returnsMinNumberFromArray = (array) => {
+    let min = array[0];
+    for (const minElement of array) {
+        if (minElement < min) {
+            min = minElement
+        }
+    }
+    console.log(min);
+}
+returnsLargestNumberFromArray(numberFour)
+
+// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+let numberFive = [3, 5, 2, 1];
+const sumOfArrayElements = (array) => {
+    let sum = 0;
+    for (const sumElement of array) {
+        sum += sumElement
+    }
+    return sum;
+}
+console.log(sumOfArrayElements(numberFive));
+
+// Дано натуральное число n. Выведите все числа от 1 до n.
+
+// - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
+//
+//
+// -   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+//   EXAMPLE:
+//   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+//   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+//   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+//
+// - Сворити функцію яка буде переносити елементи з значенням 0 у кінець масиву. Зберігаючи при цьому порядок не нульових значень.
+// Двожина масиву від 2 до 100
+// EXAMPLE:
+// [1,0,6,0,3] => [1,6,3,0,0]
+// [0,1,2,3,4] => [1,2,3,4,0]
+// [0,0,1,0]   => [1,0,0,0]
+
